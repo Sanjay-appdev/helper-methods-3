@@ -1,5 +1,9 @@
 <h1>New movie</h1>
 
+<form action ="/some_url" method="post">
+  <input name="zebra">
+  <button>submit</button>
+  </form>
 <% @movie.errors.full_messages.each do |message| %>
   <p style="color: red;"><%= message %></p>
 <% end %>

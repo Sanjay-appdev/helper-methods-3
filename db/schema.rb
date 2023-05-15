@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2023_05_11_063421) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "image_url"
+    t.text "image_url"
     t.integer "directors_id"
   end
 

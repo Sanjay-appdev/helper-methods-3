@@ -4,6 +4,8 @@
 
 <hr>
 
+<%= render "zebra/giraffe" %>
+
 <div>
   <%= link_to "Add a new movie", new_movie_path %>
 </div>
@@ -28,6 +30,11 @@
       Image URL
     </th>
 
+     <th>
+      Director
+    </th>
+
+
     <th>
       Created at
     </th>
@@ -45,7 +52,7 @@
     <td>
       <%= movie.id %>
     </td>
-
+  
     <td>
       <%= movie.title %>
     </td>
@@ -57,6 +64,11 @@
     <td>
       <%= movie.image_url %>
     </td>
+
+    <td>
+      <%= movie.directors_id %>
+    </td>
+
 
     <td>
       <%= time_ago_in_words(movie.created_at) %> ago

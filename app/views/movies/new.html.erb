@@ -23,8 +23,8 @@
     <%= form.text_area :image_url %>
   </div>
   <div>
-    <%= form.label :directors_id %>
-    <%= form.text_area :directors_id %>
+    <%= form.label :director_id %>
+    <%= form.collection_select :director_id,Director.order(:name), :id, :name %>
   </div>
   <div>
     <%= form.submit %>
